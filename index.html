@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <div id = 'header'>
+            <div>Acme Customers </div>
+            <div>VIP</div>
+    </div>
+    <div id = 'form'>
+        <h2>Customer Input Form</h2>
+        <p>Name: <input type="text" value = ""></p>
+        <p>Email: <input type="text" value = ""></p>
+        <p>isVIP: <input type="checkbox" value = ""></p>
+        <ul>
+
+        </ul>
+        <button>Create</button>
+    </div>
+    <div id = 'vipcount'>
+      VIPS
+    </div>
+  <script>
+    let vips = [];
+    const bttn = document.querySelector('button');
+    bttn.addEventListener('click', ev =>{
+      let inputs = document.querySelectorAll('input');
+      
+      inputs = Array.from(inputs);
+     
+      if(inputs[0].value === ''){
+        const li = document.createElement('li');
+        li.createTextNode('name required');
+        ul.appendChild(li);
+      }
+      if(inputs[1].value === ''){
+        const li = document.createElement('li');
+        li.createTextNode('email required');
+        ul.appendChild(li);
+      }
+      if(inputs[2].value === 'checked'){
+        const li = document.createElement('li');
+        li.createTextNode('email required');
+        ul.appendChild(li);
+      }
+    })
+
+    </script>  
+</body>
+</html>
+
+
+
+
+
+
+
+
